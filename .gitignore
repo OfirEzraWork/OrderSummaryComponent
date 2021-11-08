@@ -16,5 +16,6 @@
 .prettierignore
 
 design/
+.vscode/
 
 style-guide.md
