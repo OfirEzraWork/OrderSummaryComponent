@@ -1,0 +1,132 @@
+/*
+12 / 16 / 20 / 25 / 32 / 40 / 48
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  margin-top: 128px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 15px 15px hsla(245, 75%, 52%, 0.11);
+}
+
+.illustration {
+  width: 350px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.summary-content {
+  padding: 0 2.75em;
+}
+.summary-header {
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+
+  color: hsl(223, 47%, 23%);
+}
+.summary-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-items: center;
+
+  padding: 1em 1em;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+.plan__icon {
+  width: 2.25em;
+  height: 2.25em;
+}
+.plan__name {
+  font-size: 12px;
+  margin-bottom: 0.25em;
+}
+.plan__price {
+  font-size: 12px;
+  color: hsl(224, 23%, 55%);
+}
+.plan__change {
+  font-size: 10px;
+  color: hsl(245, 75%, 52%);
+  font-weight: bold;
+}
+.plan__change:hover {
+  color: hsl(245, 45%, 62%);
+  transition: color 0.13s;
+}
+
+.button__payment {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.75em;
+
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  transition: background-color 0.13s;
+  box-shadow: 0 1em 1em hsla(245, 75%, 52%, 0.17);
+
+  border: none;
+  border-radius: 10px;
+}
+.button__payment:hover {
+  cursor: pointer;
+  background-color: hsl(245, 45%, 62%);
+  transition: background-color 0.13s;
+}
+.button__cancel-flex {
+  display: flex;
+  justify-content: center;
+}
+.button__cancel {
+  display: block;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 1.75em;
+
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(224, 23%, 55%);
+  transition: color 0.13s;
+  background-color: white;
+
+  border: none;
+  border-radius: 10px;
+}
+.button__cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  transition: color 0.13s;
+}
